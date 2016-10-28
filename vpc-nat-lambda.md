@@ -102,7 +102,9 @@ Name tag|VPC
 lambda-rt-to-nat | nat-xxxxxx | 
 lambda-rt-to-igw | igx-xxxxxx |
 
+## Next step
 
+Now, we are able to test Lambda functions with AWS SNS service, for example.
 
 
 ## Set up lambda function
