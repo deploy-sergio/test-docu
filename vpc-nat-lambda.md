@@ -40,7 +40,7 @@ lambda-rt-to-igw pointing to internet gateway
 
 In each subnets we have to assign  their corresponding route table.
 
-We select first the subnet and into "Route table" press edit and into "Change to" we select the proper route table
+We select first the subnet and into `Route Table` tab,  press `edit` button, and into `Change to` we select the proper route table we created before
 
 Subnet name|Route table name
 ---|---
