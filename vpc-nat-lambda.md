@@ -36,7 +36,7 @@ lambda-rt-to-igw pointing to internet gateway
 
 In each subnets we have to assign  their corresponding route table.
 
-we select first the subnet and into "Route table" press edit and into "Change to" we select the proper route table
+We select first the subnet and into "Route table" press edit and into "Change to" we select the proper route table
 
 Subnet name|Route table name
 ---|---
@@ -60,7 +60,7 @@ igw-lambda | vpc-lambda
 
 > VPC Dashboard->NAT Gateways->Create NAT Gateway
 
-we need to create NAT Gateway and set the Subnet* to lambda-subnet-to-igw, and Create New EIP.
+We need to create NAT Gateway and set the Subnet* to lambda-subnet-to-igw, and Create New EIP.
 
 NG|Subnet
 ---|---
@@ -93,4 +93,6 @@ sg-default
 Inbound rules | Outbound rules
 
 
-Here we need to check into outbound rules it has ports ALL and Destination 0.0.0.0/0
+Here we need to check into outbound rules:
+
+ ports ALL and Destination 0.0.0.0/0
