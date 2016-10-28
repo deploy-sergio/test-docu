@@ -1,5 +1,7 @@
 #VPC Configuration
 
+If we have to use Lambda service and we have to do a function where this function talks to an AWS services and also to talk to the Internet, we need to configure a new VPC using a Nat gateway configuration.
+
 
 ## Create a VPC with CIDR-BLOCK: 
 
