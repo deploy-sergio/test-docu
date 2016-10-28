@@ -10,8 +10,8 @@ vpc-lambda
 
 ## Create Subnets:
 
-VPC		CIDR		    Tag name                Availability zone
-vpc-lambda  |	(172.30.0.0/24) | lambda-subnet-to-nat-1  | us-east-1a
+VPC|CIDR|Tag name|Availability zone
+vpc-lambda  |	(172.30.0.0/24) | lambda-subnet-to-nat-1  |  us-east-1a
 vpc-lambda  |	(172.30.1.0/24) | lambda-subnet-to-nat-2  |  us-east-1c
 vpc-lambda  |	(172.30.2.0/24) | lambda-subnet-to-nat-3  |  us-east-1d
 vpc-lambda  |	(172.30.3.0/24) | lambda-subnet-to-nat-4  |  us-east-1e
