@@ -95,4 +95,4 @@ Inbound rules | Outbound rules
 
 Here we need to check into outbound rules:
 
- ports ALL and Destination 0.0.0.0/0
+ ports ALL and Destination 0.0.0.0/0 |
