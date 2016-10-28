@@ -38,9 +38,9 @@ lambda-rt-to-igw | vpc-lambda
 
 In each subnets we have to assign  their corresponding route table.
 
-We select first the subnet and into `Route Table` tab,  press `edit` button, and into `Change to` we select the proper route table we created before, then press `save` button.
+We select first the subnet and into `Route Table` tab,  press `Edit` button, and into `Change to` we select the proper route table we created before, then press `Save` button.
 
-Subnet name|Route table name
+Subnet name|Route Table name
 ---|---
 lambda-subnet-to-nat-1  |  lambda-rt-to-nat
 lambda-subnet-to-nat-2	|  lambda-rt-to-nat
@@ -62,7 +62,7 @@ igw-lambda | vpc-lambda
 
 > VPC Dashboard->NAT Gateways->Create NAT Gateway
 
-We need to `create NAT Gateway` and set the Subnet* to `lambda-subnet-to-igw`, and `Create New EIP`.
+We need to `Create NAT Gateway` and set the Subnet* to `lambda-subnet-to-igw`, and `Create New EIP`.
 
 NG|Subnet
 ---|---
