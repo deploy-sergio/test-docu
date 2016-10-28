@@ -60,7 +60,7 @@ igw-lambda | vpc-lambda
 
 > VPC Dashboard->NAT Gateways->Create NAT Gateway
 
-We need to create NAT Gateway and set the Subnet* to lambda-subnet-to-igw, and Create New EIP.
+We need to `create NAT Gateway` and set the Subnet* to `lambda-subnet-to-igw`, and `Create New EIP`.
 
 NG|Subnet
 ---|---
@@ -73,11 +73,11 @@ nat-xxxx | lambda-subnet-to-igw
 
 ###VPC
 
-select: vpc-lambda
+`select: vpc-lambda`
 
 ###Subnets:
 
-Select nat (private) subnets
+`Select nat (private) subnets`
 
 subnet names |
 --- |
@@ -87,8 +87,8 @@ lambda-subnet-to-nat-3 |
 lambda-subnet-to-nat-4 |
 
 ###Security groups
-select:
-sg-default
+`select:`
+`sg-default`
 
 Inbound rules | Outbound rules
 
