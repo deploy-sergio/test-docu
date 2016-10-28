@@ -32,9 +32,7 @@ Name tag|VPC
 lambda-rt-to-nat | vpc-lambda
 lambda-rt-to-igw | vpc-lambda
 
-lambda-rt-to-nat pointing to nat gateway
 
-lambda-rt-to-igw pointing to internet gateway
 
 ## Adding route table on subnets
 
@@ -71,6 +69,41 @@ NG|Subnet
 nat-xxxx | lambda-subnet-to-igw
 
 Just we need to wait until status it is  `Available`
+
+## Pointing Router Table to our NAT and IGW services created before
+
+
+> VPC Dashboard->Route Tables
+
+
+Now, we need to do this:
+
+* lambda-rt-to-nat pointing to nat gateway
+* lambda-rt-to-igw pointing to internet gateway
+
+So, into every `Route Table` we need to go into `Routes` tab and Press `Edit` button, then we press `Add another rule` rule button and put this
+
+Into lambda-rt-to-nat:
+
+Destination|Target
+---|---
+0.0.0.0/0 | nat-xxxxxx 
+
+And press `Save`
+
+The same for lambda-rt-to-igw but we have to add `The Internet Gateway` here:
+
+Destination|Target
+---|---
+0.0.0.0/0 | igw-xxxxxx
+
+Name tag|VPC
+---|---
+lambda-rt-to-nat | nat-xxxxxx | 
+lambda-rt-to-igw | igx-xxxxxx |
+
+
+
 
 ## Set up lambda function
 
