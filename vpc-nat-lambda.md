@@ -27,6 +27,10 @@ vpc-lambda  |   (172.30.4.0/24) | lambda-subnet-to-igw    |  us-east-1a
 
 > VPC Dashboard->Route Tables
 
+Name tag|VPC
+---|---
+lambda-rt-to-nat | vpc-lambda
+lambda-rt-to-igw | vpc-lambda
 
 lambda-rt-to-nat pointing to nat gateway
 
