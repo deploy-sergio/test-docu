@@ -70,6 +70,8 @@ NG|Subnet
 ---|---
 nat-xxxx | lambda-subnet-to-igw
 
+Just we need to wait until status it is  `Available`
+
 ## Set up lambda function
 
 > Lambda->Functions->function->Configuration->Advanced Settings
