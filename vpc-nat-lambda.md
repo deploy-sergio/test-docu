@@ -29,13 +29,13 @@ lambda-rt-to-igw pointing to internet gateway
 
 we select first the subnet and into "Route table" press edit and into "Change to" we select the proper route table
 
-Subnet name		Route table name
-lambda-subnet-to-nat-1	lambda-rt-to-nat
-lambda-subnet-to-nat-2	lambda-rt-to-nat
-lambda-subnet-to-nat-3	lambda-rt-to-nat
-lambda-subnet-to-nat-4	lambda-rt-to-nat
-lambda-subnet-to-igw-1	lambda-rt-to-igw
-lambda-subnet-to-igw-2	lambda-rt-to-igw
+Subnet name|Route table name
+---|---
+lambda-subnet-to-nat-1  |  lambda-rt-to-nat
+lambda-subnet-to-nat-2	|  lambda-rt-to-nat
+lambda-subnet-to-nat-3	|  lambda-rt-to-nat
+lambda-subnet-to-nat-4	|  lambda-rt-to-nat
+lambda-subnet-to-igw	|  lambda-rt-to-igw
 
 ## Create a NAT gateway.
 
