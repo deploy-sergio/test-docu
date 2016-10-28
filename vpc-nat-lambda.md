@@ -2,7 +2,7 @@
 
 If we have to use Lambda service and we have to do a function where this function talks to an AWS services and It also needs to talk to the Internet, we need to configure a new VPC using a Nat gateway configuration.
 
-## Create a VPC with CIDR-BLOCK: 
+## Create a VPC with CIDR-BLOCK 
 
 
 VPC name | CIDR
@@ -10,7 +10,7 @@ VPC name | CIDR
 vpc-lambda | 172.30.0.0/16
 
 
-## Create Subnets:
+## Create Subnets
 
 > VPC Dashboard->Subnets
 
@@ -23,7 +23,7 @@ vpc-lambda  |	(172.30.2.0/24) | lambda-subnet-to-nat-3  |  us-east-1d
 vpc-lambda  |	(172.30.3.0/24) | lambda-subnet-to-nat-4  |  us-east-1e
 vpc-lambda  |   (172.30.4.0/24) | lambda-subnet-to-igw-1  |  us-east-1a
 	
-## Create Route tables:
+## Create Route tables
 
 > VPC Dashboard->Route Tables
 
@@ -32,8 +32,9 @@ lambda-rt-to-nat pointing to nat gateway
 
 lambda-rt-to-igw pointing to internet gateway
 
+## Adding route table on subnets
 
-## In each subnets we have to assign  their corresponding route table.
+In each subnets we have to assign  their corresponding route table.
 
 we select first the subnet and into "Route table" press edit and into "Change to" we select the proper route table
 
@@ -45,7 +46,7 @@ lambda-subnet-to-nat-3	|  lambda-rt-to-nat
 lambda-subnet-to-nat-4	|  lambda-rt-to-nat
 lambda-subnet-to-igw	|  lambda-rt-to-igw
 
-## Create a NAT gateway.
+## Create a NAT gateway
 
 > VPC Dashboard->NAT Gateways->Create NAT Gateway
 
