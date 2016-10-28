@@ -1,11 +1,12 @@
 #VPC Configuration
 
-Example:
 
 ## Create a VPC with CIDR-BLOCK: 
 
-vpc-lambda
-172.30.0.0/16
+
+VPC name | CIDR
+---|---
+vpc-lambda | 172.30.0.0/16
 
 
 ## Create Subnets:
