@@ -45,7 +45,7 @@ Your going to want click Create NAT Gateway and set the Subnet* to lambda-subnet
 
 ## Set up lambda function
 
-Lambda > Functions > my-function > Configuration -> Advanced Settings
+> Lambda->Functions->function->Configuration->Advanced Settings
 
 
 VPC
