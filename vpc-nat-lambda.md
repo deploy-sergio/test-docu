@@ -10,6 +10,9 @@ vpc-lambda
 
 ## Create Subnets:
 
+> VPC Dashboard->Subnets
+
+
 VPC|CIDR|Tag name|Availability zone
 ---|---|---|---
 vpc-lambda  |	(172.30.0.0/24) | lambda-subnet-to-nat-1  |  us-east-1a
@@ -19,6 +22,9 @@ vpc-lambda  |	(172.30.3.0/24) | lambda-subnet-to-nat-4  |  us-east-1e
 vpc-lambda  |   (172.30.4.0/24) | lambda-subnet-to-igw-1  |  us-east-1a
 	
 ## Create Route tables:
+
+> VPC Dashboard->Route Tables
+
 
 lambda-rt-to-nat pointing to nat gateway
 
@@ -56,11 +62,12 @@ Subnets:
 
 Select nat (private) subnets
 
-subnet names
-lambda-subnet-to-nat-1
-lambda-subnet-to-nat-2
-lambda-subnet-to-nat-3
-lambda-subnet-to-nat-4
+subnet names |
+--- |
+lambda-subnet-to-nat-1 |
+lambda-subnet-to-nat-2 |
+lambda-subnet-to-nat-3 |
+lambda-subnet-to-nat-4 |
 
 Security groups
 select:
