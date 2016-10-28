@@ -21,7 +21,7 @@ vpc-lambda  |	(172.30.0.0/24) | lambda-subnet-to-nat-1  |  us-east-1a
 vpc-lambda  |	(172.30.1.0/24) | lambda-subnet-to-nat-2  |  us-east-1c
 vpc-lambda  |	(172.30.2.0/24) | lambda-subnet-to-nat-3  |  us-east-1d
 vpc-lambda  |	(172.30.3.0/24) | lambda-subnet-to-nat-4  |  us-east-1e
-vpc-lambda  |   (172.30.4.0/24) | lambda-subnet-to-igw-1  |  us-east-1a
+vpc-lambda  |   (172.30.4.0/24) | lambda-subnet-to-igw    |  us-east-1a
 	
 ## Create Route tables
 
@@ -46,11 +46,25 @@ lambda-subnet-to-nat-3	|  lambda-rt-to-nat
 lambda-subnet-to-nat-4	|  lambda-rt-to-nat
 lambda-subnet-to-igw	|  lambda-rt-to-igw
 
+## Create a IGW and attach to VPC
+
+> VPC Dashboard->Internet Gateways->Create Internet Gateway
+
+It's necessary to create a new internet gateway and then attach it to your VPC
+
+IG|vpc
+---|---
+igw-lambda | vpc-lambda 
+
 ## Create a NAT gateway
 
 > VPC Dashboard->NAT Gateways->Create NAT Gateway
 
-Your going to want click Create NAT Gateway and set the Subnet* to lambda-subnet-point-to-igw, and Create New EIP.
+we need to create NAT Gateway and set the Subnet* to lambda-subnet-to-igw, and Create New EIP.
+
+NG|Subnet
+---|---
+nat-xxxx | lambda-subnet-to-igw
 
 ## Set up lambda function
 
