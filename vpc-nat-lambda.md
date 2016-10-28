@@ -2,13 +2,13 @@ VPC Configuration
 
 Example:
 
-1) Create a VPC with CIDR-BLOCK: 
+## Create a VPC with CIDR-BLOCK: 
 
 vpc-lambda
 172.30.0.0/16
 
 
-2) Create Subnets:
+## Create Subnets:
 
 VPC		CIDR		    Tag name                Availability zone
 vpc-lambda  |	(172.30.0.0/24) | lambda-subnet-to-nat-1  | us-east-1a
@@ -17,14 +17,14 @@ vpc-lambda  |	(172.30.2.0/24) | lambda-subnet-to-nat-3  |  us-east-1d
 vpc-lambda  |	(172.30.3.0/24) | lambda-subnet-to-nat-4  |  us-east-1e
 vpc-lambda  |   (172.30.4.0/24) | lambda-subnet-to-igw-1  |  us-east-1a
 	
-3) Create Route tables:
+## Create Route tables:
 
 lambda-rt-to-nat pointing to nat gateway
 
 lambda-rt-to-igw pointing to internet gateway
 
 
-4) In each subnets we have to assign  their corresponding route table.
+## In each subnets we have to assign  their corresponding route table.
 
 we select first the subnet and into "Route table" press edit and into "Change to" we select the proper route table
 
@@ -36,13 +36,13 @@ lambda-subnet-to-nat-4	lambda-rt-to-nat
 lambda-subnet-to-igw-1	lambda-rt-to-igw
 lambda-subnet-to-igw-2	lambda-rt-to-igw
 
-5) Create a NAT gateway.
+## Create a NAT gateway.
 
 VPC Dashboard > NAT Gateways > Create NAT Gateway
 
 Your going to want click Create NAT Gateway and set the Subnet* to lambda-subnet-point-to-igw, and Create New EIP.
 
-Set up lambda function
+## Set up lambda function
 
 Lambda > Functions > my-function > Configuration -> Advanced Settings
 
